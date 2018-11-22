@@ -1,0 +1,212 @@
+.section {
+  padding-left: 7rem;
+  padding-right: 7rem;
+  border-bottom: 1px solid rgba(159, 201, 255, 0.507);
+
+  &__header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  h1 {
+    color: #42516e;
+    font-size: 42px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    color: $blackblue;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .hubs,
+  .controllers,
+  .plumbing {
+    text-align: center;
+    margin-right: 3rem;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      @media (min-width: $breakpoint) {
+        display: flex;
+      }
+      li {
+        display: inline;
+        margin-right: 10px;
+        flex: 1;
+        img {
+          width: 77px;
+          height: 77px;
+        }
+
+        p {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .hubs {
+    &__wrapper {
+      border-bottom: 5px solid $blue;
+
+      @media (min-width: $breakpoint) {
+        height: 150px;
+      }
+    }
+  }
+
+  .controllers {
+    &__wrapper {
+      border-bottom: 5px solid $green;
+
+      @media (min-width: $breakpoint) {
+        height: 150px;
+      }
+    }
+
+    p {
+      color: $green;
+    }
+  }
+
+  .plumbing {
+    &__wrapper {
+      border-bottom: 5px solid $black;
+
+      @media (min-width: $breakpoint) {
+        height: 150px;
+      }
+    }
+
+    p {
+      color: $black;
+    }
+  }
+}
+
+section.main {
+  background: url("/static/pattern.png") no-repeat,
+    radial-gradient(ellipse at center, #4ebaff 0%, #2684ff 100%);
+  flex: 1;
+  padding: 0 !important;
+  p {
+    color: $offWhite;
+    font-weight: 600;
+  }
+  h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: $squish;
+  }
+
+  h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .contentcontainer {
+    margin-bottom: 7rem;
+  }
+
+  .imgcontainer {
+    position: relative;
+  }
+
+  .ipadholding {
+    position: absolute;
+    bottom: 0;
+  }
+  .hand {
+    position: relative;
+  }
+  @media screen and (max-width: $breakpoint) {
+    h1 {
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+    }
+    .contentcontainer {
+      margin-bottom: 3rem;
+    }
+    .ipadholding {
+      position: relative;
+      margin-left: 0;
+    }
+  }
+}
+section.second {
+  background-color: #f1f7ff;
+  padding: 40px 0;
+  border-style: solid;
+  border-color: #979797;
+  border-width: 1px 0px 1px 0px;
+
+  .header {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: transparent;
+  }
+  h1 {
+    font-size: 30px;
+    color: #42516e;
+    font-weight: 400;
+  }
+}
+section.content {
+  padding: 0 !important;
+  margin-top: 50px;
+  .ipadholding {
+    position: absolute;
+    bottom: 0;
+  }
+  .hand {
+    position: relative;
+  }
+  p {
+    margin: 30px 0;
+  }
+}
+
+section.last {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: $breakpoint) {
+  section.main {
+    text-align: center;
+    .gnemlx {
+      display: block;
+    }
+    .dwjtlc li {
+      text-align: left;
+      display: block;
+      a {
+        line-height: 33px;
+        margin-right: 0;
+      }
+    }
+  }
+  section.second {
+    text-align: center;
+  }
+  section.content {
+    text-align: center;
+    .ipadholding {
+      position: relative;
+      bottom: 0;
+    }
+  }
+}

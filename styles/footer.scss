@@ -1,0 +1,118 @@
+@mixin widthSetter {
+  @media (min-width: 400px) and (max-width: 768px) {
+    width: 95%;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    width: 95%;
+    margin: 0 auto;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1200px) {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: $blue;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: white;
+  padding-top: $squish;
+
+  h4 {
+    font-weight: 700;
+  }
+
+  a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .bottom {
+    ul {
+      li {
+        display: inline;
+        margin-right: 2rem;
+      }
+    }
+  }
+  .logo {
+    img {
+      width: 100px;
+      float: right;
+    }
+  }
+  .social {
+    float: right;
+    margin-right: -40px;
+  }
+  &__header {
+    color: white;
+    // border-top: 1px solid white;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__links {
+    display: flex;
+    flex: 0 auto;
+    padding-right: 5rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    span {
+      color: white;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint) {
+    .bottom {
+      ul {
+        li {
+          display: block;
+        }
+      }
+    }
+    li {
+      text-align: center;
+    }
+    .logo {
+      margin: 10px 0;
+      text-align: center;
+      img {
+        margin-right: 0;
+        float: none;
+      }
+    }
+    .extra {
+      margin-bottom: 20px;
+    }
+    .social {
+      float: none;
+      margin-right: 0;
+      display: inline;
+      text-align: center;
+      ul {
+        li {
+          display: inline;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

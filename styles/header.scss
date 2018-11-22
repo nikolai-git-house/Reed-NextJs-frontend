@@ -1,0 +1,92 @@
+@mixin widthSetter {
+  @media (min-width: 400px) and (max-width: 768px) {
+    width: 95%;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    width: 95%;
+    margin: 0 auto;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1200px) {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  width: 100%;
+  background-color: $blue;
+
+  &__wrapper {
+    @include widthSetter();
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__header {
+    color: white;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex: 0 auto;
+
+    span {
+      color: white;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    img {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    &__dropdown {
+      img {
+        margin-left: 8px;
+        margin-right: 8px;
+        padding-bottom: 2px;
+        cursor: pointer;
+      }
+
+      &__menu {
+        display: none;
+
+        &--active {
+          background-color: white;
+          border: 1px solid rgb(223, 223, 223);
+          border-radius: 5px;
+          position: absolute;
+          margin-top: $squish;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          display: block;
+          a {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

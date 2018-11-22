@@ -1,0 +1,38 @@
+[
+  { 
+    "id": "234AAA", 
+    "type": "HARDWARE", 
+    "title": "test item", 
+    "price": 300,
+    "image": "../static/reedcore.png",
+    "description": "This text field is where we can write some information down about the device and any other random information",
+    "sizes": []
+  },
+  { 
+    "id": "FHS8SDF", 
+    "type": "PLUMBING", 
+    "title": "test plubming", 
+    "price": 100,
+    "image": "../static/reedcore.png",
+    "description": "This text field is where we can write some information down about the device and any other random information",
+    "sizes": ["1/2", "3/4", "1", "1 1/2", "2", "2 1/2"]
+  },
+  { 
+    "id": "FHS8SDF", 
+    "type": "PLUMBING", 
+    "title": "test plubming 2", 
+    "price": 300,
+    "image": "../static/reedcore.png",
+    "description": "This text field is where we can write some information down about the device and any other random information",
+    "sizes": ["1/2", "3/4", "1", "1 1/2", "2", "2 1/2"]
+  },
+  { 
+    "id": "890SDF", 
+    "type": "ACCESSORIES", 
+    "title": "test accessories", 
+    "price": 10,
+    "image": "../static/reedcore.png",
+    "description": "This text field is where we can write some information down about the device and any other random information",
+    "sizes": []
+  }
+]

@@ -1,0 +1,18 @@
+[
+  { 
+    "id": "234AAA",
+    "address": "1251 King St",
+    "status": "ACTIVE",
+    "expiry": "07/12/2019",
+    "country": "Canada",
+    "postalzip": "M5V 1B1"
+  },
+  { 
+    "id": "171ujf",
+    "address": "59 E. Liberty Stree",
+    "status": "INACTIVE",
+    "expiry": "",
+    "country": "Canada",
+    "postalzip": "M5V 1B1"
+  }
+]

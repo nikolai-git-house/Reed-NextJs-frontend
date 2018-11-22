@@ -1,0 +1,206 @@
+@import "../node_modules/renaissancecss/renaissance.css";
+@import "../node_modules/rc-pagination/assets/index.css";
+@import "./utils/__colors.scss";
+@import "./utils/__helpers.scss";
+
+html,
+body {
+  /* background-color: $offWhite; */
+  background-color: #ffffff;
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+
+  /* Adjust font size */
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+
+  color: #42516E;
+}
+
+@mixin widthSetter {
+  @media (min-width: 400px) and (max-width: 768px) {
+    width: 95%;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    width: 95%;
+    margin: 0 auto;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1200px) {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.__container {
+  @include widthSetter();
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+hr {
+  border: 1px solid #e3e3e3;
+}
+
+a {
+  font-weight: 600;
+}
+
+p {
+  color: #172b4d;
+  line-height: 1.3em;
+}
+
+button {
+  background-color: $blue;
+  border: 1px solid #0052cc;
+  border-radius: 3px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 2rem;
+}
+
+button.btn-danger {
+  background-color: $offWhite;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: red;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 2rem;
+}
+
+button.btn-info {
+  background-color: $offWhite;
+  border: 1px solid #0052cc;
+  border-radius: 3px;
+  color: #0052cc;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 2rem;
+}
+
+button.btn-small {
+  padding: 0;
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+input,
+textarea,
+select {
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid #e8e8e8;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.cart__body__list__item img {
+  width: 20%;
+}
+
+small{
+  font-weight: 400;
+}
+
+select {
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="text"], input[type="email"], input[type="number"], 
+input[type="date"], input[type="password"], input[type="search"], 
+input[type="text"], input[type="url"], input[type="time"], 
+input[type="datetime-local"], input[type="time"], input[type="week"], 
+input[type="mpnth"], input[type="color"], input[type="tel"],
+textarea, select {
+    width: 100%;
+    border: 0px;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    margin-bottom: 1rem;
+
+    box-sizing: border-box;
+    
+    box-shadow: 1px 1px 2px 2px #f3f3f3;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus, select:focus,
+input:hover, textarea:hover, select:hover {
+  border: 0px !important;
+  box-shadow: 1px 1px 2px 2px #d8e7fd;
+}
+
+textarea{
+  min-height: 150px;
+}
+
+label{
+  display:inline-block;
+  margin-bottom: 8px;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited{
+  color: #0571ff;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+@import "./footer.scss";
+@import "./header.scss";
+@import "./sections.scss";
+@import "./checkout.scss";
+
+@media (max-width: 768px) and (min-width: 400px) {
+  .container {
+    width: auto;
+  }
+}
